@@ -8,43 +8,50 @@
 body {
   background-color: #292929;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
 main {
   position: relative;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  min-height: 100vh;
   padding: 100px;
-  box-sizing: border-box;
   background: linear-gradient(180deg, #008aff, #ff137d), url(../img/img-bg.jpg);
   background-size: cover;
   background-blend-mode: screen;
+  display: flex;
+  justify-content: center;
 }
-main .content {
+main .container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .content {
   z-index: 9;
   max-width: 700px;
 }
-main .content h2 {
+main .container .content h2 {
   font-size: 3em;
   color: #37392E;
 }
-main .content p {
+main .container .content p {
   font-size: 1.2em;
   color: #37392E;
 }
-main img {
+main .container .img-box {
   z-index: 3;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+}
+main .container .img-box img {
   position: relative;
   border-radius: 15px;
 }
-main .wave {
+main .container .wave {
   z-index: 5;
   position: absolute;
   bottom: 0;
